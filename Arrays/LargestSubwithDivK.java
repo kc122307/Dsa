@@ -1,4 +1,4 @@
-package com.kunal.Dsa;
+package com.kunal.Dsa.Arrays;
 
 import java.util.HashMap;
 
@@ -6,8 +6,8 @@ public class LargestSubwithDivK {
     static int largest(int [] arr,int k){
       int n = arr.length;
       HashMap<Integer,Integer> map= new HashMap<>();
-      int sum =0;
-      int res=0;
+      int sum = 0;
+      int res = 0;
         for (int i = 0; i < n; i++) {
             sum=((sum+arr[i])%k+k)%k;
             if(sum==0){
