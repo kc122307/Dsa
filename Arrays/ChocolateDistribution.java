@@ -1,4 +1,4 @@
-package com.kunal.Dsa;
+package com.kunal.Dsa.Arrays;
 
 import java.util.Arrays;
 

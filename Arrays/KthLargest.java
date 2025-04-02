@@ -1,4 +1,4 @@
-package com.kunal.Dsa;
+package com.kunal.Dsa.Arrays;
 
 public class KthLargest {
     static int find(int [] arr,int k){
@@ -14,19 +14,18 @@ public class KthLargest {
         for(int num:arr){
             count[num-minValue]++;
         }
-        int remain = k;
-        for(int n = count.length-1; n >= 0; n--){
+       int remain=k;
+        for (int n = count.length-1 ;n >=0 ; n--) {
             remain-=count[n];
             if(remain<=0){
-            return n + minValue;
-             }
+                return n+minValue;
+            }
         }
-
         return -1;
     }
 
     public static void main(String[] args) {
-        int[] arr = {12, 3, 5, 7, 19};
+        int[] arr = {16, 18, 5, 7, 19};
         int K = 2;
         System.out.println(find(arr, K));
     }

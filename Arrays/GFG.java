@@ -1,4 +1,4 @@
-package com.kunal.Dsa;
+package com.kunal.Dsa.Arrays;
 
 public class GFG {
     static  void reverseArray(int [] arr) {
